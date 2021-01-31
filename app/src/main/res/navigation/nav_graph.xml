@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/nav_map">
+
+    <fragment
+        android:id="@+id/nav_map"
+        android:name="com.meazza.uber.ui.map.MapFragment"
+        android:label="fragment_map"
+        tools:layout="@layout/fragment_map" />
+    <fragment
+        android:id="@+id/nav_auth"
+        android:name="com.meazza.uber.ui.auth.AuthFragment"
+        android:label="fragment_auth"
+        tools:layout="@layout/fragment_auth" />
+    <fragment
+        android:id="@+id/nav_travels"
+        android:name="com.meazza.uber.ui.travels.TravelsFragment"
+        android:label="fragment_travels"
+        tools:layout="@layout/fragment_travels" />
+</navigation>
